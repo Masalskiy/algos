@@ -2,6 +2,11 @@
 public class Power_of_Two {
     public static void main(String[] args) {
         System.out.println(isPowerOfTwo_v2(-2));
+
+        //немного о битовых операторах
+        int value1 = 1;
+        int result = value1 << 3; //value1 * 2^степень_сдвига
+        System.out.println(result);
     }
 
     // 16/2=8/2=4/2=2/2=1
@@ -35,5 +40,7 @@ public class Power_of_Two {
             return (n & (n-1)) == 0;
         }
     }
+
+
 
 }
