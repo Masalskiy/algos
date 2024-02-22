@@ -33,6 +33,7 @@ public class BinarySearch {
         }
         return -1;
     }
+    //auxiliary space O(1)
 
     // l - left, r - right, s - search
     private static int recursiveBinarySearch(int[] list, int l, int r, int s) {
@@ -40,7 +41,7 @@ public class BinarySearch {
             int mid = (r + l) / 2;
             if (list[mid] == s)
                 return mid;
-                
+
             if (list[mid] < s)
                return recursiveBinarySearch(list, mid + 1, r, s);
             
@@ -48,4 +49,5 @@ public class BinarySearch {
         }
         return -1;
     }
+    //auxiliary space O(logN)
 }
